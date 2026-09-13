@@ -1,0 +1,26 @@
+/* ===== Reset básico y configuración general ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif; /* tipografía base para el texto normal, NO Abel */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+}
+
+/* Bloque contenedor */
+.contenedor {
+  width: 100%;
+  max-width: 75rem; 
+  margin: 2rem 1rem; 
+  background-color: rgba(255, 255, 255, 0.92); 
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
