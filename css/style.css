@@ -24,3 +24,34 @@ body {
   border-radius: 0.5rem;
 }
 
+/* ===== Tipografía ===== */
+h1, h2, h3,
+.destacado {
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 0.03rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #66271C;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #66271C;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-family: 'Abel', sans-serif; 
+  color: #66271C;
+}
