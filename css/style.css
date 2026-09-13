@@ -12,14 +12,22 @@ body {
   color: #2b2b2b;
   display: flex;
   justify-content: center;
+
+  /* ===== Imagen de fondo ===== */
+  background-image: url('../img/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 100vh;
 }
 
 /* Bloque contenedor */
 .contenedor {
   width: 100%;
-  max-width: 75rem; 
+  max-width: 75rem;
   margin: 2rem 1rem; 
-  background-color: rgb(236 208 203); 
+  background-color: rgb(236 208 203);
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -52,7 +60,7 @@ p {
 }
 
 strong {
-  font-family: 'Abel', sans-serif; 
+  font-family: 'Abel', sans-serif;
   color: #66271C;
 }
 
@@ -72,7 +80,7 @@ nav ul {
   gap: 2rem;
   padding: 1rem 0;
   background-color: rgba(0, 212, 255, 0.15);
-  border-left: 4px solid rgba(10, 43, 49, 0.15);;
+  border-left: 0.25rem solid rgba(10, 43, 49, 0.15);
 }
 
 nav a {
@@ -108,14 +116,15 @@ footer {
   font-size: 0.85rem;
   color: #555555;
 }
+
 /* ===== Layout de 3 columnas iguales ===== */
 .columnas {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 .columna {
-  flex: 1 1 30%; /* las tres columnas crecen/achican por igual, ~33% cada una */
+  flex: 1 1 30%; 
   background-color: rgba(255, 255, 255, 0.6);
   padding: 1rem;
   border-radius: 0.375rem;
@@ -133,6 +142,7 @@ footer {
 .columna li {
   margin-bottom: 0.4rem;
 }
+
 /* ===== Layout de 2 columnas de ancho diferente ===== */
 .columnas-obra {
   display: flex;
@@ -140,25 +150,25 @@ footer {
   flex-wrap: wrap;
 }
 .columna-ancha {
-  flex: 2 1 60%; 
+  flex: 2 1 60%;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 1rem;
   border-radius: 0.375rem;
 }
 
 .columna-angosta {
-  flex: 1 1 30%; 
+  flex: 1 1 30%;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 1rem;
   border-radius: 0.375rem;
-  align-self: flex-start; /* que no se estire a la altura de la columna ancha */
-}
+  align-self: flex-start; 
+}  
 
 .columna-angosta h2 {
   font-size: 1.4rem;
 }
 
-/* ===== Marco para las columnas ===== */
+
 .columna,
 .columna-ancha,
 .columna-angosta {
@@ -209,8 +219,7 @@ form input:focus {
   box-shadow: 0 0 0 0.125rem rgba(106, 27, 27, 0.25);
 }
 
-form input:disabled,
-form fieldset:disabled {
+form input:disabled {
   background-color: #e8e8e8;
   color: #999999;
   cursor: not-allowed;
@@ -275,7 +284,7 @@ button:disabled {
   background-color: #333333;
 }
 
-/* ===== Galería de obras (index.html) ===== */
+/* ===== Galería de obras ===== */
 #galeria {
   display: flex;
   flex-wrap: wrap;
@@ -318,10 +327,10 @@ button:disabled {
   color: #555555;
 }
 
-
 #galeria.galeria-compacta .obra img {
   height: 6rem;
 }
+
 /* ===== Responsive ===== */
 @media (max-width: 48rem) {
   .contenedor {
