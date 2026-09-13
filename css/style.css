@@ -79,7 +79,7 @@ nav ul {
   justify-content: center;
   gap: 2rem;
   padding: 1rem 0;
-  background-color: rgba(0, 212, 255, 0.15);
+  background-color:rgb(68 173 187);
   border-left: 0.25rem solid rgba(10, 43, 49, 0.15);
 }
 
@@ -357,4 +357,24 @@ button:disabled {
   .obra {
     flex: 1 1 100%;
   }
+}
+
+/* ===== Layout de la página del ejercicio: formularios + imagen ===== */
+.ejercicio-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ejercicio-contenido {
+  flex: 1 1 20rem;
+}
+
+.ejercicio-imagen {
+  flex: 1 1 15rem;
+  max-width: 20rem;
+  border-radius: 0.375rem;
+  align-self: center; /* reemplaza el flex-start que tenía antes */
+  margin-top: 1rem;
 }

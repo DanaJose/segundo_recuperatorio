@@ -27,7 +27,9 @@
 
     <main>
 
-      <section>
+      <section class="columnas-ejercicio">
+
+    <article class="columna-ancha">
         <h2>Repositorio de grabaciones digitales</h2>
         <p>Cargá la cantidad de obras que querés registrar, completá los datos
           de cada una y los parámetros de transferencia y almacenamiento.
@@ -39,6 +41,12 @@
           <input type="number" id="cantidad-obras" min="1" required>
           <button type="submit">Confirmar cantidad</button>
         </form>
+    </article>
+
+    <div class="ejercicio-layout">
+
+    <div class="ejercicio-contenido">
+      <section>
 
         <form id="form-obra">
           <label for="nombre-obra">Nombre de la obra</label>
@@ -52,7 +60,9 @@
 
           <button type="submit" id="btn-agregar-obra">Agregar obra</button>
         </form>
+    </article>
 
+    
         <p id="contador-obras"></p>
 
         <form id="form-parametros">
@@ -64,13 +74,23 @@
 
           <button type="submit" id="btn-guardar-parametros">Guardar parámetros</button>
         </form>
+    </article>
 
+  
+
+  
         <button id="btn-calcular" type="button" disabled>Calcular resultados</button>
 
         <div id="resultados"></div>
 
         <button id="btn-reiniciar" type="button">Reiniciar</button>
       </section>
+    
+    </div>
+
+    <img src="img/anderson-3.jpg" alt="Laurie Anderson en performance" class="ejercicio-imagen">
+
+  </div>
 
     </main>
 
